@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
+    <link rel="stylesheet" href="src/index.css" />
   </head>
   <body>
     <div class="container">
-      <form>
+      <form class="search-form">
         <input
           type="search"
           placeholder="Enter a city to be searched"
           required
+          class="search-form-input"
         />
-        <input type="submit" value="search" />
+        <input type="submit" value="search" class="search-form-submit" />
       </form>
-      <h1>New york</h1>
+      <hr />
+      <main>
+        <h1 class="city">New york</h1>
 
-      <h2>20°C</h2>
-      <p>
-        Friday 23:08, heavy intensity rain <br />
-        Humidity: 91%, Wind: 8.23km/h
-      </p>
+        <h2 class="temperature">20°C</h2>
+        <p class="more-info">
+          Friday 23:08, heavy intensity rain <br />
+          Humidity: <span class="weather-data-values">91%</span> , Wind:
+          <span class="weather-data-values">8.23km/h</span>
+        </p>
+      </main>
+      <hr />
       <footer>
         Coded by
         <a href="https://github.com/hajo1345hawi" target="_blank"
