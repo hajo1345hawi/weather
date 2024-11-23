@@ -8,18 +8,19 @@
   </head>
   <body>
     <div class="container">
-      <form class="search-form">
+      <form class="search-form" id="search-form">
         <input
           type="search"
           placeholder="Enter a city to be searched"
           required
           class="search-form-input"
+          id="search-form-input"
         />
         <input type="submit" value="search" class="search-form-submit" />
       </form>
       <hr />
       <main>
-        <h1 class="city">New york</h1>
+        <h1 class="city" id="city">New york</h1>
 
         <h2 class="temperature">20°C</h2>
         <p class="more-info">
@@ -36,5 +37,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
