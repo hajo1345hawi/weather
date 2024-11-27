@@ -9,29 +9,34 @@
   </head>
   <body>
     <div class="container">
-      <form class="search-form" id="search-form">
-        <input
-          type="search"
-          placeholder="Enter a city to be searched"
-          required
-          class="search-form-input"
-          id="search-form-input"
-        />
-        <input type="submit" value="search" class="search-form-submit" />
-      </form>
-      <hr />
-      <main>
-        <h1 class="city" id="city"></h1>
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city to be searched"
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-submit" />
+        </form>
+      </header>
 
-        <h2 class="temperature"><span id="temperature"></span>°C</h2>
-        <p class="more-info">
-          <span id="time">Friday 23:08</span>, <span id="description"></span>
-          <br />
-          Humidity: <span class="weather-data-values" id="humidity"></span> ,
-          Wind: <span class="weather-data-values" id="wind-speed"></span>
-        </p>
+      <main>
+        <div>
+          <h1 class="city" id="city"></h1>
+          <p class="more-info">
+            <span id="time"></span>, <span id="description"></span>
+            <br />
+            Humidity: <span class="weather-data-values" id="humidity"></span> ,
+            Wind: <span class="weather-data-values" id="wind-speed"></span>
+          </p>
+        </div>
+        <span class="temperature">
+          <span id="emoji"></span><span id="temperature"></span><sup> °C</sup>
+        </span>
       </main>
-      <hr />
+
       <footer>
         Coded by
         <a href="https://github.com/hajo1345hawi" target="_blank"
