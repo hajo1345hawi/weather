@@ -23,18 +23,22 @@
       </header>
 
       <main>
-        <div>
-          <h1 class="city" id="city"></h1>
-          <p class="more-info">
-            <span id="time"></span>, <span id="description"></span>
-            <br />
-            Humidity: <span class="weather-data-values" id="humidity"></span> ,
-            Wind: <span class="weather-data-values" id="wind-speed"></span>
-          </p>
+        <div class="weather-data-container">
+          <div class="weather-data">
+            <h1 class="city" id="city"></h1>
+            <p class="more-info">
+              <span id="time"></span>, <span id="description"></span>
+              <br />
+              Humidity:
+              <span class="weather-data-values" id="humidity"></span> , Wind:
+              <span class="weather-data-values" id="wind-speed"></span>
+            </p>
+          </div>
+          <span class="temperature">
+            <span id="emoji"></span><span id="temperature"></span><sup> °C</sup>
+          </span>
         </div>
-        <span class="temperature">
-          <span id="emoji"></span><span id="temperature"></span><sup> °C</sup>
-        </span>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
 
       <footer>

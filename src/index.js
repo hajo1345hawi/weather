@@ -54,7 +54,23 @@ function formatDate(date) {
   let formattedDay = days[day];
   return `${formattedDay} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let days = ["mon", "tue", "wed", "thur", "fri", "sat", "sun"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-day">
+            <div class="weather-forecast-date">${day}</div>
+            <div class="weather-forecast-icon">🌧️️</div>
+            <div class="weather-forecast-temperature">19° 14°</div>
+          </div>`;
+  });
+  let forecast = document.getElementById("forecast");
+  forecast.innerHTML = forecastHtml;
+}
 let searchForm = document.getElementById("search-form");
 
 searchForm.addEventListener("submit", handleSearch);
 searchCity("New york");
+displayForecast();
